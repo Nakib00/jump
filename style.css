@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(209, 53, 53);
+    overflow: hidden;
+}
+.gamecontaner{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+.spiderman{
+    background-image: url(spidar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 118px;
+    height: 233px;
+    position: absolute;
+    bottom: 0;
+    left: 500px;
+}
+.obstical{
+    background-image: url(car.png);
+    background-size: cover;
+    width: 245px;
+    height: 95px;
+    position: absolute;
+    bottom: 0;
+    left: 500px;
+}
+.gameover{
+    visibility: hidden;
+}
+.animation{
+    animation: spider 0.6s linear;
+}
+.obsticalanimation{
+    animation: obsticalanimation 2s linear infinite;
+}
+@keyframes spider{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 380px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes obsticalanimation{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
